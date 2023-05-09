@@ -1,0 +1,30 @@
+{
+  "name": "mahmud/wp-vue-kickstart-master",
+  "description": "Wordpress Vue Starter Plugin",
+  "type": "wordpress-plugin",
+  "license": "GPLv2",
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "WHOLESALE\\Admin\\": "admin/",
+      "WHOLESALE\\Frontend\\": "frontend/",
+      "WHOLESALE\\Includes\\": "includes/",
+      "WHOLESALE\\Api\\": "api/"
+    }
+  },
+  "authors": [
+    {
+      "name": "mahmudhaisan",
+      "email": "mahmudhaisan@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "humanmade/coding-standards": "^1.1",
+    "wp-coding-standards/wpcs": "2.3.0 as 2.2.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
