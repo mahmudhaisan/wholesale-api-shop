@@ -1,5 +1,6 @@
 <template>
   <h1>Dashboard</h1>
+  <p>Shortcod- [wlsale-app]</p>
 </template>
 
 <script>

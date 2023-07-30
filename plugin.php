@@ -2,11 +2,11 @@
 /**
  * @link            https://wpagain.com
  * @since           1.0.0
- * @package         Restaurant_Management_Wp
+ * @package         Wholesale Shop
  *
- * Plugin Name: Wholesale Api Integration Plugin
+ * Plugin Name: Wholesale Shop Plugin
  * Plugin URI: https://wpagain.com
- * Description: Wholesale Api Integration Plugin
+ * Description: Wholesale shop Plugin
  * Version: 1.0.0
  * Author: Mahmud Haisan
  * Author URI: https://mahmud-haisan.com
@@ -28,7 +28,7 @@ use WHOLESALE\Api\Api;
 use WHOLESALE\Includes\Admin;
 use WHOLESALE\Includes\Frontend;
 
-final class Restaurant_Management_Wp
+final class Whole_Sale_Shop
 {
 
     /**
@@ -116,10 +116,10 @@ final class Restaurant_Management_Wp
  * Initialize Main Plugin
  * @since 1.0.0
  */
-function restaurant_management_wp()
+function Wholesale_cb()
 {
-    return Restaurant_Management_Wp::init();
+    return Whole_Sale_Shop::init();
 }
 
 // Run the Plugin
-restaurant_management_wp();
+Wholesale_cb();

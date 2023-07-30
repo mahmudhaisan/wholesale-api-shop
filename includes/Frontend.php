@@ -6,6 +6,7 @@ class Frontend
 
     public function __construct()
     {
+
         add_shortcode('wlsale-app', [$this, 'render_frontend']);
         add_action('wp_enqueue_scripts', [$this, 'register_frontend_scripts_styles']);
     }
@@ -18,6 +19,7 @@ class Frontend
 
     public function load_scripts()
     {
+
         wp_register_script('wlsale-manifest', WHOLESALE_PLUGIN_URL . 'assets/js/manifest.js', [], 1, true);
         wp_register_script('wlsale-vendor', WHOLESALE_PLUGIN_URL . 'assets/js/vendor.js', ['wlsale-manifest'], 1, true);
         wp_register_script('wlsale-frontend', WHOLESALE_PLUGIN_URL . 'assets/js/frontend.js', ['wlsale-vendor'], 1, true);
